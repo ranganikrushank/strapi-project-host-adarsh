@@ -75,7 +75,6 @@ module.exports = ({ env }) => ({
       ssl: {
         rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false),
       },
-      pool: { min: 0, max: 5 }, // Adjust connection pool size
     },
     debug: false,
   },
